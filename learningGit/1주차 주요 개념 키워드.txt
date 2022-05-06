@@ -1,0 +1,23 @@
+1. 버전관리 - 프로젝트 상태가 변경되는 정보를 관리
+
+2. git 초기화(git initialize) - git으로 관리한 다고 설정하는것
+
+3. add - commit에 반영할 파일 선택하는것
+
+4. commit - 현재 프로젝트 상태를 캡쳐 저장하는것
+
+5. commit history - commit한 리스트
+
+6. push - local repo ▶ remote repo 반영
+
+7. pull - remote repo ▶ local repo 반영
+
+8. tracking - local repo ▶ remote repo 로 연결
+
+9. clone - remote repo ▶ local repo 복제
+
+10. repo -  git으로 관리 되는 프로젝트
+
+11. local repo - 내 컴퓨터에 저장되어있는 프로젝트 저장소
+
+12. remote repo - github처럼 다른곳에서 접속 가능한 곳에 프로젝트가 저장되어있는 저장소
