@@ -1,0 +1,11 @@
+1. 협업하기 위한 단계는 무엇이 있을까? - Issue ▶ branch ▶ merge or PR 후 merge
+
+2. issue - 작업, 기능 추가, 버그등 프로젝트에서 해결해야하는 문제
+
+3. branch - 특정 commit에서 갈라져 작업 할 수 있는 공간
+
+4. merge - branch에서 작업한 commit들을 다른 (ex. main, develop branch)로 합치는 것
+
+5. merge conflict - merge 과정에서 같은 파일에 동일한 부분이 수정된 것이 발견되는 것
+
+6. remote repo 의 origin - origin/main이 remote repo에 main branch, remote repo 초기 설정 때 origin으로 붙여서 붙은 거임

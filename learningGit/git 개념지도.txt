@@ -1,0 +1,73 @@
+1주차 개념지도
+
+1. 버전관리
+	버전1
+	버전1+0.1
+	버전1+0.1-b
+	버전1+0.1-b-0.1
+	위 방식처럼 버전이 업데이트 됬던것들을 기록해서 관리하는것
+
+2. git 초기화(git initialize) 
+	컴퓨터에 있는 프로젝트를 Git 이 관리하는 프로젝트로 만들 수 있습니다. 앞으로 Git 으로 관리할꺼야! 하고 설정해주면 됩니다. 이 작업을 한다고 표현합니다.
+
+3. commit
+	add 하고 스테이지에 올린 후 commit을 진행
+	작업한 코드를 캡쳐해서 올린다고 생각하면됨
+
+
+4. commit에 어떤 정보가 있어야 버전관리가 잘될까?
+	commit 메세지, 작업자정보, commit시간, commit아이디
+
+5. commit history
+	commit 한 순서대로 리스트. 역사!
+
+6. local repo remote repo 
+	local repo = 내컴퓨터에 있는 repo
+	remote repo = 클라우드처럼 원격으로 끌어다 쓸 수있는 repo
+
+7. Tracking과 clone
+	Tracking = local repo ▶ remote repo 연결
+	clone = remote repo ▶ local repo와 연결
+
+8. remote repo와 local repo가 왜 따로 있는지?
+	협업할때나 여러 컴퓨터를 사용할때 remote repo에 local repo를 연결시켜 하나에 프로젝트를 여러곳에서 동시 작업 가능하다
+
+9. push, pull
+		remote repo
+	push ▲	  ▼pull
+		local repo
+----------------------------------------------------------------------------------------------------------------
+
+2주차 개념지도
+
+1. 협업하기 위한 단계는 무엇이 있을까?
+	1단계 : 누가 작업 할지 정한다 - Issue
+	2단계 : 각자 맡은것을 작업한다 - Branch
+	3단계 : 각자 맡은 작업을 프로젝트에 합친다 - Merge
+	(경우에 따라) 작업내용 리뷰 후 최종 프로젝트 반영 - PR 후 Merge
+
+2. Issue 
+	내가 할 작업, 기능 추가, 버그등을 여러 방식으로 사용하는 것
+
+2-1. Issue 할당
+	누가 작업할 것인지를 정하고 Branch를 만들어 작업 공간 나누기
+
+3. Branch
+	특정 commit에서 갈라져 나와 작업함
+	특정 작업, 기능, 버그등을 할때 그 작업을 개발하기위한 작업공간을 만드는것
+	작업할 브랜치 바꾸는것 -체크아웃
+	체크아웃 된 Branch만 commit 반영됨
+	Branch명은 규칙을 가지고 지어야 프로젝트 관리가 쉬움
+	각 작업 Branch에서 작업할땐 다른 브랜치에 영향을 받지 않음
+
+4. Merge 
+	Branch 딴 기능등에 작업이 완료 됬을 때 commit들을 다른 Branch(main 또는 develop Branch)랑 합쳐주는 기능
+
+5. Merge conflict
+	브랜치 끼리 같은 파일에 동일한 부분에 작업이 되어있을때 서로 충돌나는 것
+	Git이 충돌난 내역을 파악하기 쉽게 고쳐 내역을 보여줌
+	conflict를 수정하려면 반영할 내역을  고친후 Merge confilct 하면 됨
+
+6. remote repo 와 Branch 
+	Tracking이 local repo 전체를 remote repo에 push해서 반영되는것이 아니라 지정한 특정 Branch에 진행된다
+	push, pull 는 Tracking 되는 특정 Branch기준으로 commit 내역을 반영함
