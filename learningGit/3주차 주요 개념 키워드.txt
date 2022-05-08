@@ -1,0 +1,13 @@
+1. PR - 내 작업내역을 바로 merge하지 않고 참여하는 프로젝트에 내 branch를 merge 해달라고 요청을 먼저 보내는것
+
+2. amend - 가장 최신 commit을 수정하는 것
+
+3. revert - 원하는 commit 까지 되돌리고 그 기록을 남김
+
+4. reset - 원하는 commit 했던 곳 까지 리셋 시키는 것
+
+5. stash - 작업 변경 내역을 commit 하지 않고 보관 해둘 때 사용
+
+6. .gitignore - Github repo에 올라가면 안되는 파일들을 없는 것처럼 무시하게 만드는 설정
+
+7. README.md - 해당 프로젝트를 소개하는 내용을 담는 파일
